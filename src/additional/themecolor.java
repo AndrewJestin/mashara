@@ -51,38 +51,6 @@ public class themecolor implements ActionListener {
             //   кто побеждает
 
 
-
-
-
-//
-
-           Umpire1.setBackground(Color.black);
-            Umpire1.setOpaque(true);
-           Umpire1.setBorder(BorderFactory.createLineBorder(Color.white));
-            Umpire1.setForeground(Color.white);
-
-
-
-            Umpire2.setBackground(Color.black);
-            Umpire2.setOpaque(true);
-            Umpire2.setBorder(BorderFactory.createLineBorder(Color.white));
-            Umpire2.setForeground(Color.white);
-
-
-
-            Umpire3.setBackground(Color.black);
-            Umpire3.setOpaque(true);
-          Umpire3.setBorder(BorderFactory.createLineBorder(Color.white));
-            Umpire3.setForeground(Color.white);
-
-
-           Umpire4.setBackground(Color.black);
-            Umpire4.setOpaque(true);
-           Umpire4.setBorder(BorderFactory.createLineBorder(Color.white));
-            Umpire4.setForeground(Color.white);
-
-
-
            round.setBackground(Color.black);
             round.setOpaque(true);
             round.setForeground(Color.white);
@@ -196,23 +164,9 @@ public class themecolor implements ActionListener {
             bwarnings.setOpaque(true);
             bwarnings.setBorder(BorderFactory.createLineBorder(Color.white,3));
 
-//            bwarnings.setLocation(55, 300);
-//            bwarnings.setSize(120, 200);
-//            bwarnings.setHorizontalAlignment(0);
-//            bwarnings.setForeground(Color.black);
-//            bwarnings.setOpaque(true);
-//            bwarnings.setFont(new Font("Arial",Font.BOLD,90));
-//            bwarnings.setBorder(BorderFactory.createLineBorder(Color.white,3));
 
 
-            kickblue1.setBorder(BorderFactory.createLineBorder(Color.white,3));
-            kickblue2.setBorder(BorderFactory.createLineBorder(Color.white,3));
-            kickred1.setBorder(BorderFactory.createLineBorder(Color.white,3));
-            kickred2.setBorder(BorderFactory.createLineBorder(Color.white,3));
-            nlblrnd2.setBackground(Color.black);
-            nlblrnd1.setBackground(Color.black);
-            nlblrnd2.setForeground(Color.white);
-            nlblrnd1.setForeground(Color.white);
+
 
             theme.setText("White");
 
@@ -256,34 +210,6 @@ public class themecolor implements ActionListener {
 
             //   кто побеждает
 
-
-
-//
-
-            Umpire1.setBackground(Color.LIGHT_GRAY);
-            Umpire1.setOpaque(true);
-            Umpire1.setBorder(BorderFactory.createLineBorder(Color.black));
-            Umpire1.setForeground(Color.black);
-
-            Umpire2.setBackground(Color.LIGHT_GRAY);
-            //Umpire1.setBackground(Color.yellow);
-            Umpire2.setOpaque(true);
-            Umpire2.setBorder(BorderFactory.createLineBorder(Color.black));
-            Umpire2.setForeground(Color.black);
-
-            Umpire3.setBackground(Color.LIGHT_GRAY);
-
-            //Umpire1.setBackground(Color.yellow);
-            Umpire3.setOpaque(true);
-            Umpire3.setBorder(BorderFactory.createLineBorder(Color.black));
-            Umpire3.setForeground(Color.black);
-
-            Umpire4.setBackground(Color.LIGHT_GRAY);
-
-            //Umpire1.setBackground(Color.yellow);
-            Umpire4.setOpaque(true);
-            Umpire4.setBorder(BorderFactory.createLineBorder(Color.black));
-            Umpire4.setForeground(Color.black);
 
 
 
@@ -400,14 +326,6 @@ public class themecolor implements ActionListener {
             bwarnings.setForeground(Color.black);
             bwarnings.setBorder(BorderFactory.createLineBorder(Color.black,3));
 
-            kickblue1.setBorder(BorderFactory.createLineBorder(Color.black,3));
-            kickblue2.setBorder(BorderFactory.createLineBorder(Color.black,3));
-            kickred1.setBorder(BorderFactory.createLineBorder(Color.black,3));
-            kickred2.setBorder(BorderFactory.createLineBorder(Color.black,3));
-            nlblrnd2.setBackground(Color.LIGHT_GRAY);
-            nlblrnd1.setBackground(Color.LIGHT_GRAY);
-            nlblrnd2.setForeground(Color.black);
-            nlblrnd1.setForeground(Color.black);
 
             theme.setText("Black");
 

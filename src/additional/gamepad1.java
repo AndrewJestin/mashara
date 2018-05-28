@@ -27,7 +27,8 @@ public class gamepad1 {
 
             if (controller1.isButtonPressed(3)) {
                 amount++;
-                ar=amount;
+                amountt++;
+                ar=amountt;
 
                 // System.out.println(amount);
 
@@ -35,12 +36,13 @@ public class gamepad1 {
 
                 System.out.println("Судья: "+lblUmpire1.getText()+ ", "+round.getText()+". Время - "+min+":"+count+"  прибавленно 1 очко красному");
                 rs11.setText(String.valueOf(amount));
-                rs1.setText(String.valueOf(amount));
+                rs11t.setText(String.valueOf(amountt));
+
 
                 labelcolor2 a = new labelcolor2();
                 a.colorL(ar,ar2,ar3,ar4);
                 String[]str2 =new String[5];
-                str2[0] = boxUmpire12.getText();
+              //  str2[0] = ;
                 str2[1] = round.getText();
                 str2[2] = lbltimer.getText();
                 str2[3] = "1 point Red";
@@ -54,18 +56,19 @@ public class gamepad1 {
             }
             if (controller1.isButtonPressed(1)) {
                 amountb++;
+                amountbt++;
 
-                ab=amountb;
+                ab=amountbt;
 
 
 
                 bs11.setText(String.valueOf(amountb));
-                bs1.setText(String.valueOf(amountb));
+                bs11t.setText(String.valueOf(amountbt));
+
 
                 labelcolor a = new labelcolor();
                 a.colorL(ab,ab2,ab3,ab4);
                 String[]str =new String[5];
-                str[0] = boxUmpire12.getText();
                 str[1] = round.getText();
                 str[2] = lbltimer.getText();
                 str[3] = "1 point Blue";
@@ -80,17 +83,17 @@ public class gamepad1 {
             if (controller1.isButtonPressed(4)) {
                 amount--;
 
-                ar=amount;
+                ar=amountt;
 
                 // System.out.println(amount);
                 System.out.println("Судья: "+lblUmpire1.getText()+ ", "+round.getText()+". Время - "+min+":"+count+"  снято 1 очко красному");
                 rs11.setText(String.valueOf(amount));
-                rs1.setText(String.valueOf(amount));
+                rs11t.setText(String.valueOf(amountt));
                 labelcolor2 a = new labelcolor2();
                 a.colorL(ar,ar2,ar3,ar4);
 
                 String[]str24 =new String[5];
-                str24[0] = boxUmpire12.getText();
+             //   str24[0] = boxUmpire12.getText();
                 str24[1] = round.getText();
                 str24[2] = lbltimer.getText();
                 str24[3] = "1 point Red,Removed";
@@ -102,16 +105,16 @@ public class gamepad1 {
             if (controller1.isButtonPressed(5)) {
                 amountb--;
 
-                ab=amountb;
+                ab=amountbt;
 
 
                 System.out.println("Судья: "+lblUmpire1.getText()+ ", "+round.getText()+". Время - "+min+":"+count+"  снято 1 очко синему ");
                 bs11.setText(String.valueOf(amountb));
-                bs1.setText(String.valueOf(amountb));
+                bs11t.setText(String.valueOf(amountbt));
                 labelcolor a = new labelcolor();
                 a.colorL(ab,ab2,ab3,ab4);
                 String[]str23 =new String[5];
-                str23[0] = boxUmpire12.getText();
+               // str23[0] = boxUmpire12.getText();
                 str23[1] = round.getText();
                 str23[2] = lbltimer.getText();
                 str23[3] = "1 point Blue,Removed";

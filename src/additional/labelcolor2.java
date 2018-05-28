@@ -3,6 +3,7 @@ package additional;
 
 import static main.adminscreen.rglobal;
 import static main.adminscreen.rglobal2;
+import static main.adminscreen.rtotal1;
 import static main.mainscreen.rtotal;
 
 public class labelcolor2 {
@@ -14,6 +15,7 @@ public class labelcolor2 {
         rglobal = (ar+ar2+ar3+ar4)/4;
         System.out.println(rglobal);
         rtotal.setText(String.valueOf(rglobal));
+        rtotal1.setText(String.valueOf(rglobal));
 
 //            rtotal1.setText(String.valueOf(rglobal));
 //            btotal1.setText(String.valueOf(bglobal));

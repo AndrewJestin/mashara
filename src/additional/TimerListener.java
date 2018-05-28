@@ -24,7 +24,7 @@ public class TimerListener implements ActionListener {
 
         lbltimer.setText("0" + min + ":0" + count);
         lbltimer1.setText("0" + min + ":0" + count);
-        round.setVisible(true);
+      //  round.setVisible(true);
         if (brk ==0){
             lbltimer1.setForeground(Color.white);
         }

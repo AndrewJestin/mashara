@@ -2,6 +2,7 @@ package additional;
 
 
 import static main.adminscreen.bglobal;
+import static main.adminscreen.btotal1;
 import static main.mainscreen.btotal;
 
 
@@ -14,6 +15,7 @@ public class labelcolor {
 bglobal = (ab+ab2+ab3+ab4)/4;
 System.out.println(bglobal);
         btotal.setText(String.valueOf(bglobal));
+        btotal1.setText(String.valueOf(bglobal));
 //        if (ab < ar){
 //            rglobal1=1;
 //            bglobal1=0;

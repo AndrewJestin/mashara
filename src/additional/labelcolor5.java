@@ -1,10 +1,9 @@
 package additional;
 
 
-import java.awt.*;
-
 import static main.adminscreen.*;
-import static main.mainscreen.*;
+import static main.mainscreen.btotal;
+import static main.mainscreen.rtotal;
 
 
 public class labelcolor5 {
@@ -171,44 +170,6 @@ public class labelcolor5 {
             btotal1.setText(String.valueOf(bglobal));
             rtotal.setText(String.valueOf(rglobal));
             btotal.setText(String.valueOf(bglobal));}
-
-        if (rglobal<bglobal&&bglobal!=1){
-
-//            leader.setBackground(Color.blue);
-//            leader.setForeground(Color.white);
-//            leader.setText("LEADER");
-            leader2.setBackground(Color.blue);
-            leader2.setForeground(Color.white);
-            leader2.setText("LEADER");
-            if (round.getText().equals("FINISHED")){
-               // leader.setText("WINNER");
-                leader2.setText("WINNER");
-
-            }
-        }
-        else  if (rglobal>bglobal&&rglobal!=1)
-        {// leader.setBackground(Color.red);
-          //  leader.setForeground(Color.white);
-           // leader.setText("LEADER");
-            leader2.setBackground(Color.red);
-            leader2.setForeground(Color.white);
-            leader2.setText("LEADER");
-            if (round.getText().equals("FINISHED")){
-               // leader.setText("WINNER");
-                leader2.setText("WINNER");
-
-            }
-        }
-        else { //leader.setBackground(Color.BLACK);
-           // leader.setForeground(Color.WHITE);
-          //  leader.setText("DRAW");
-            leader2.setBackground(Color.white);
-            leader2.setForeground(Color.black);
-            leader2.setText("DRAW");
-        }
-
-
-
 
     }
 

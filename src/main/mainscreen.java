@@ -18,12 +18,7 @@ import static main.adminscreen.*;
         public static JLabel lblmatch = new JLabel("Match No.");
        // public static JLabel leader = new JLabel("DRAW");
         public static JLabel lblMatchNo = new JLabel(lblMatchNo1.getText());
-        public static JLabel Umpire1 = new JLabel(img);
-        public static JLabel Umpire2 = new JLabel(img);
-        public static JLabel Umpire3 = new JLabel(img);
-        public static JLabel Umpire4 = new JLabel(img);
-
-        public static JLabel rpenalty = new JLabel("0");
+                public static JLabel rpenalty = new JLabel("0");
         public static JLabel bpenalty = new JLabel("0");
         public static JLabel nlblrnd1 = new JLabel("1 Rnd.");
         public static JLabel nlblrnd2 = new JLabel("2 Rnd.");
@@ -37,18 +32,12 @@ import static main.adminscreen.*;
         public static JLabel bs4 = new JLabel("0");
         public static JLabel rcompetitor = new JLabel("Red");
         public static JLabel bcompetitor = new JLabel("Blue");
-
-
-        public static JLabel kickred1 = new JLabel("");
-        public static JLabel kickred2 = new JLabel("");
-        public static JLabel kickblue1 = new JLabel("");
-        public static JLabel kickblue2 = new JLabel("");
         public static JLabel btotal = new JLabel("0");
-
         public static JLabel rwarnings = new JLabel("0");
         public static JLabel bwarnings = new JLabel("0");
         public static JLabel rtotal = new JLabel("0");
         public static JLabel round = new JLabel("ROUND : "+rndnum);
+        public static JLabel roundt = new JLabel("FIGHT : "+lblMatchNo1.getText());
         public static JLabel lbltimer1 = new JLabel("00:00");
         // public static JLabel lblkicks2 = new JLabel("Compulsory techniques ");
         //gamepad
@@ -62,25 +51,8 @@ import static main.adminscreen.*;
             totalGUI.setLayout(null);
 
 
-//        lblkicks2.setLocation(530, 410);
-//        lblkicks2.setSize(250, 20);
-//        lblkicks2.setForeground(Color.black);
-//        lblkicks2.setFont(new Font("Arial", Font.BOLD, 20));
-//        lblkicks2.setVisible(false);
-//        totalGUI.add(lblkicks2);
-// категория
-            lblcategory.setLocation(400, 5);
-            lblcategory.setSize(850, 60);
-            lblcategory.setForeground(Color.white);
-            lblcategory.setBackground(Color.black);
-            lblcategory.setVerticalAlignment(0);
-            lblcategory.setHorizontalAlignment(4);
-            lblcategory.setFont(new Font("Arial", Font.BOLD, 40));
-            //  lblcategory.setBorder(BorderFactory.createLineBorder(Color.black));
-            // timer.setBackground(Color.yellow);
-            lblcategory.setOpaque(true);
-            lblcategory.setVisible(false);
-            totalGUI.add(lblcategory);
+
+
 // номер боя (надпись)
             lblmatch.setLocation(0, 505);
             lblmatch.setSize(170, 40);
@@ -118,64 +90,9 @@ import static main.adminscreen.*;
             lbltimer1.setBackground(Color.black);
             lbltimer1.setOpaque(true);
             totalGUI.add(lbltimer1);
-//   кто побеждает
-
-//            leader.setLocation(400, 210);
-//            leader.setSize(480, 140);
-//            leader.setHorizontalAlignment(0);
-//            leader.setFont(new Font("Arial",Font.BOLD,70));
-//            leader.setBackground(Color.black);
-//            leader.setOpaque(true);
-//            leader.setBorder(BorderFactory.createLineBorder(Color.white,3));
-//            leader.setForeground(Color.white);
-//            totalGUI.add(leader);
 
 
-            // номера судей
 
-            Umpire1.setLocation(705, 495);
-            Umpire1.setSize(85, 55);
-            Umpire1.setHorizontalAlignment(0);
-            Umpire1.setFont(new Font("Arial",Font.BOLD,20));
-            Umpire1.setBackground(Color.black);
-            Umpire1.setOpaque(true);
-            Umpire1.setBorder(BorderFactory.createLineBorder(Color.white));
-            Umpire1.setForeground(Color.white);
-            Umpire1.setVisible(false);
-            totalGUI.add(Umpire1);
-
-            Umpire2.setLocation(855, 495);
-            Umpire2.setSize(85, 55);
-            Umpire2.setHorizontalAlignment(0);
-            Umpire2.setFont(new Font("Arial",Font.BOLD,20));
-            Umpire2.setBackground(Color.black);
-            Umpire2.setOpaque(true);
-            Umpire2.setBorder(BorderFactory.createLineBorder(Color.white));
-            Umpire2.setForeground(Color.white);
-            Umpire2.setVisible(false);
-            totalGUI.add(Umpire2);
-
-            Umpire3.setLocation(1005, 495);
-            Umpire3.setSize(85, 55);
-            Umpire3.setHorizontalAlignment(0);
-            Umpire3.setFont(new Font("Arial",Font.BOLD,20));
-            Umpire3.setBackground(Color.black);
-            Umpire3.setOpaque(true);
-            Umpire3.setBorder(BorderFactory.createLineBorder(Color.white));
-            Umpire3.setForeground(Color.white);
-            Umpire3.setVisible(false);
-            totalGUI.add(Umpire3);
-
-            Umpire4.setLocation(1155, 495);
-            Umpire4.setSize(85, 55);
-            Umpire4.setHorizontalAlignment(0);
-            Umpire4.setFont(new Font("Arial",Font.BOLD,20));
-            Umpire4.setBackground(Color.black);
-            Umpire4.setOpaque(true);
-            Umpire4.setBorder(BorderFactory.createLineBorder(Color.white));
-            Umpire4.setForeground(Color.white);
-            Umpire4.setVisible(false);
-            totalGUI.add(Umpire4);
 
 // номер раунда
             round.setLocation(10, 10);
@@ -185,7 +102,17 @@ import static main.adminscreen.*;
             round.setBackground(Color.black);
             round.setOpaque(true);
             round.setForeground(Color.white);
+            round.setVisible(false);
             totalGUI.add(round);
+
+            roundt.setLocation(10, 10);
+            roundt.setSize(370, 70);
+            roundt.setHorizontalAlignment(2);
+            roundt.setFont(new Font("Arial",Font.BOLD,60));
+            roundt.setBackground(Color.black);
+            roundt.setOpaque(true);
+            roundt.setForeground(Color.white);
+            totalGUI.add(roundt);
 
             //  судья 1
 
@@ -379,77 +306,7 @@ rs1.setVisible(false);
             bwarnings.setBorder(BorderFactory.createLineBorder(Color.white,3));
             totalGUI.add(bwarnings);
 
-//  зачеты
 
-            kickred1.setLocation(830, 360);
-            kickred1.setSize(50, 50);
-            kickred1.setHorizontalAlignment(0);
-            kickred1.setBackground(Color.red);
-            kickred1.setBorder(BorderFactory.createLineBorder(Color.white,2));
-            kickred1.setVisible(false);
-            kickred1.setOpaque(true);
-
-
-            totalGUI.add(kickred1);
-
-            kickred2.setLocation(830, 420);
-            kickred2.setSize(50, 50);
-            kickred2.setHorizontalAlignment(0);
-            kickred2.setBackground(Color.red);
-            kickred2.setBorder(BorderFactory.createLineBorder(Color.white,2));
-            kickred2.setVisible(false);
-            kickred2.setOpaque(true);
-
-
-            totalGUI.add(kickred2);
-
-            //  судья 2
-
-            kickblue1.setLocation(400, 360);
-            kickblue1.setSize(50, 50);
-            kickblue1.setHorizontalAlignment(0);
-            kickblue1.setBackground(Color.red);
-            kickblue1.setBorder(BorderFactory.createLineBorder(Color.white,2));
-            kickblue1.setVisible(false);
-            kickblue1.setOpaque(true);
-
-
-            totalGUI.add(kickblue1);
-
-            kickblue2.setLocation(400, 420);
-            kickblue2.setSize(50, 50);
-            kickblue2.setHorizontalAlignment(0);
-            kickblue2.setBackground(Color.red);
-            kickblue2.setBorder(BorderFactory.createLineBorder(Color.white,2));
-            kickblue2.setVisible(false);
-            kickblue2.setOpaque(true);
-
-
-            totalGUI.add(kickblue2);
-
-            nlblrnd1.setLocation(560, 360);
-            nlblrnd1.setSize(160, 50);
-            nlblrnd1.setHorizontalAlignment(0);
-            nlblrnd1.setFont(new Font("Arial",Font.BOLD,40));
-            nlblrnd1.setForeground(Color.white);
-            nlblrnd1.setBackground(Color.black);
-            nlblrnd1.setVisible(false);
-            nlblrnd1.setOpaque(true);
-
-
-            totalGUI.add(nlblrnd1);
-
-            nlblrnd2.setLocation(560, 420);
-            nlblrnd2.setSize(160, 50);
-            nlblrnd2.setHorizontalAlignment(0);
-            nlblrnd2.setVisible(false);
-            nlblrnd2.setFont(new Font("Arial",Font.BOLD,40));
-            nlblrnd2.setForeground(Color.white);
-            nlblrnd2.setBackground(Color.black);
-            nlblrnd2.setOpaque(true);
-
-
-            totalGUI.add(nlblrnd2);
 
             totalGUI.setOpaque(true);
 

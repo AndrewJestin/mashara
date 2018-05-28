@@ -19,14 +19,7 @@ public class ekran1 implements ActionListener {
     public void actionPerformed(ActionEvent event) {
         if (event.getActionCommand().equals("1920*1080")) {
             screen=2;
-            img = new ImageIcon(new ImageIcon("flags/"+img_flag+".png").getImage().getScaledInstance(110, 110, Image.SCALE_DEFAULT));
-
             System.out.println(screen);
-           ImageIcon img = new ImageIcon(new ImageIcon("flags/"+img_flag+".png").getImage().getScaledInstance(130, 120, Image.SCALE_DEFAULT));
-            Umpire1.setIcon(img);
-            Umpire2.setIcon(img);
-            Umpire3.setIcon(img);
-            Umpire4.setIcon(img);
             frame1.setExtendedState(JFrame.MAXIMIZED_BOTH);
             lblcategory.setLocation(1020, 30);
             lblcategory.setSize(860, 80);
@@ -72,38 +65,7 @@ public class ekran1 implements ActionListener {
             //   кто побеждает
 
 
-//
-            Umpire1.setLocation(1160, 760);
-            Umpire1.setSize(100, 60);
-            Umpire1.setHorizontalAlignment(0);
-            //Umpire1.setBackground(Color.yellow);
-            Umpire1.setOpaque(true);
-            //  Umpire1.setBorder(BorderFactory.createLineBorder(Color.black));
-            Umpire1.setFont(new Font("Arial",Font.BOLD,50));
 
-            Umpire2.setLocation(1360, 760);
-            Umpire2.setSize(100, 60);
-            Umpire2.setHorizontalAlignment(0);
-            //Umpire1.setBackground(Color.yellow);
-            Umpire2.setOpaque(true);
-            //  Umpire1.setBorder(BorderFactory.createLineBorder(Color.black));
-            Umpire2.setFont(new Font("Arial",Font.BOLD,50));
-
-            Umpire3.setLocation(1555, 760);
-            Umpire3.setSize(100, 60);
-            Umpire3.setHorizontalAlignment(0);
-            //Umpire1.setBackground(Color.yellow);
-            Umpire3.setOpaque(true);
-            //  Umpire1.setBorder(BorderFactory.createLineBorder(Color.black));
-            Umpire3.setFont(new Font("Arial",Font.BOLD,50));
-
-            Umpire4.setLocation(1755, 760);
-            Umpire4.setSize(100, 60);
-            Umpire4.setHorizontalAlignment(0);
-            //Umpire1.setBackground(Color.yellow);
-            Umpire4.setOpaque(true);
-            //  Umpire1.setBorder(BorderFactory.createLineBorder(Color.black));
-            Umpire4.setFont(new Font("Arial",Font.BOLD,50));
 
 
             round.setLocation(20, 0);
@@ -234,29 +196,6 @@ public class ekran1 implements ActionListener {
             bwarnings.setSize(178, 300);
             bwarnings.setFont(new Font("Arial", Font.BOLD, 140));
 
-            kickred1.setLocation(1220, 560);
-            kickred1.setSize(80, 80);
-            kickred1.setBorder(BorderFactory.createLineBorder(Color.black,3));
-
-            kickred2.setLocation(1220, 660);
-            kickred2.setSize(80, 80);
-            kickred2.setBorder(BorderFactory.createLineBorder(Color.black,3));
-
-            kickblue1.setLocation(620, 560);
-            kickblue1.setSize(80, 80);
-            kickblue1.setBorder(BorderFactory.createLineBorder(Color.black,3));
-
-            kickblue2.setLocation(620, 660);
-            kickblue2.setSize(80, 80);
-            kickblue2.setBorder(BorderFactory.createLineBorder(Color.black,3));
-
-            nlblrnd1.setLocation(860, 580);
-            nlblrnd1.setSize(220, 70);
-            nlblrnd1.setFont(new Font("Arial",Font.BOLD,60));
-
-            nlblrnd2.setLocation(860, 680);
-            nlblrnd2.setSize(220, 70);
-            nlblrnd2.setFont(new Font("Arial",Font.BOLD,60));
 
 
 
@@ -270,11 +209,7 @@ public class ekran1 implements ActionListener {
 
         } else if (event.getActionCommand().equals("1280*800")) {
             screen=1;
-            ImageIcon img = new ImageIcon(new ImageIcon("flags/"+img_flag+".png").getImage().getScaledInstance(90, 90, Image.SCALE_DEFAULT));
-            Umpire1.setIcon(img);
-            Umpire2.setIcon(img);
-            Umpire3.setIcon(img);
-            Umpire4.setIcon(img);
+
 
             lblMatchNo.setLocation(10, 565);
             lblMatchNo.setSize(125, 125);
@@ -299,33 +234,6 @@ public class ekran1 implements ActionListener {
             lbltimer1.setFont(new Font("Arial", Font.BOLD, 120));
             lbltimer1.setOpaque(true);
 
-//   кто побеждает
-
-
-            // номера судей
-
-            Umpire1.setLocation(705, 495);
-            Umpire1.setSize(85, 55);
-            Umpire1.setOpaque(true);
-            Umpire1.setFont(new Font("Arial",Font.BOLD,20));
-
-
-            Umpire2.setLocation(855, 495);
-            Umpire2.setSize(85, 55);
-            Umpire2.setOpaque(true);
-            Umpire2.setFont(new Font("Arial",Font.BOLD,20));
-
-
-            Umpire3.setLocation(1005, 495);
-            Umpire3.setSize(85, 55);
-            Umpire3.setOpaque(true);
-            Umpire3.setFont(new Font("Arial",Font.BOLD,20));
-
-
-            Umpire4.setLocation(1155, 495);
-            Umpire4.setSize(85, 55);
-            Umpire4.setOpaque(true);
-            Umpire4.setFont(new Font("Arial",Font.BOLD,20));
 
 
 // номер раунда
@@ -448,19 +356,6 @@ public class ekran1 implements ActionListener {
             bwarnings.setFont(new Font("Arial",Font.BOLD,90));
 
 
-            kickred1.setLocation(830, 360);
-            kickred1.setSize(50, 50);
-            kickred1.setBorder(BorderFactory.createLineBorder(Color.black,2));
-            kickred2.setLocation(830, 420);
-            kickred2.setSize(50, 50);
-            kickred2.setBorder(BorderFactory.createLineBorder(Color.black,2));
-            kickblue1.setLocation(400, 360);
-            kickblue1.setSize(50, 50);
-
-            kickblue1.setBorder(BorderFactory.createLineBorder(Color.black,2));
-            kickblue2.setLocation(400, 420);
-            kickblue2.setSize(50, 50);
-            kickblue2.setBorder(BorderFactory.createLineBorder(Color.black,2));
 
             nlblrnd1.setLocation(560, 360);
             nlblrnd1.setSize(160, 50);

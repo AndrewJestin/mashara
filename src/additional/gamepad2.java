@@ -23,18 +23,19 @@ public class gamepad2 {
 
             if (controller2.isButtonPressed(3)) {
                 amount2++;
-                ar2=amount2;
+                amount2t++;
+                ar2=amount2t;
 
 
                 // System.out.println(amount);
-                rs2.setText(String.valueOf(amount2));
+                rs22t.setText(String.valueOf(amount2t));
                 rs22.setText(String.valueOf(amount2));
 
                 labelcolor2 a = new labelcolor2();
                 a.colorL(ar,ar2,ar3,ar4);
 
                 String[]str14 =new String[5];
-                str14[0] = boxUmpire22.getText();
+               // str14[0] = boxUmpire22.getText();
                 str14[1] = round.getText();
                 str14[2] = lbltimer.getText();
                 str14[3] = "1 point Red";
@@ -44,18 +45,19 @@ public class gamepad2 {
             }
             if (controller2.isButtonPressed(1)) {
                 amountb2++;
+                amountb2t++;
 
-                ab2=amountb2;
+                ab2=amountb2t;
 
 
 
-                bs2.setText(String.valueOf(amountb2));
+                bs22t.setText(String.valueOf(amountb2t));
                 bs22.setText(String.valueOf(amountb2));
 
                 labelcolor a = new labelcolor();
                 a.colorL(ab,ab2,ab3,ab4);
                 String[]str11 =new String[5];
-                str11[0] = boxUmpire22.getText();
+               // str11[0] = boxUmpire22.getText();
                 str11[1] = round.getText();
                 str11[2] = lbltimer.getText();
                 str11[3] = "1 point Blue";
@@ -69,17 +71,18 @@ public class gamepad2 {
 
             if (controller2.isButtonPressed(4)) {
                 amount2--;
+                amount2t--;
 
-                ar2=amount2;
+                ar2=amount2t;
 
                 // System.out.println(amount);
-                rs2.setText(String.valueOf(amount2));
+                rs22t.setText(String.valueOf(amount2t));
                 rs22.setText(String.valueOf(amount2));
                 labelcolor2 a = new labelcolor2();
                 a.colorL(ar,ar2,ar3,ar4);
 
                 String[]str22 =new String[5];
-                str22[0] = boxUmpire22.getText();
+               // str22[0] = boxUmpire22.getText();
                 str22[1] = round.getText();
                 str22[2] = lbltimer.getText();
                 str22[3] = "1 point Red,Removed";
@@ -90,16 +93,17 @@ public class gamepad2 {
             }
             if (controller2.isButtonPressed(5)) {
                 amountb2--;
+                amountb2t--;
 
-                ab2=amountb2;
+                ab2=amountb2t;
 
 
-                bs2.setText(String.valueOf(amountb2));
+                bs22t.setText(String.valueOf(amountb2t));
                 bs22.setText(String.valueOf(amountb2));
                 labelcolor a = new labelcolor();
                 a.colorL(ab,ab2,ab3,ab4);
                 String[]str21 =new String[5];
-                str21[0] = boxUmpire22.getText();
+               // str21[0] = boxUmpire22.getText();
                 str21[1] = round.getText();
                 str21[2] = lbltimer.getText();
                 str21[3] = "1 point Blue,Removed";
